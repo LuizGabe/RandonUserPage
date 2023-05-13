@@ -11,7 +11,7 @@ function App() {
   })
 
   const handleGet = async () => {
-    const data = await axios.get('https://randomuser.me/api/')
+    const data = await axios.get('https://randomuser.me/api/?nat=BR')
     setPerson(data.data.results[0])
     console.log(person)
   }
